@@ -1,0 +1,57 @@
+main {
+    margin-left: 60px;
+    margin-right: 16px;
+}
+
+.main-page-title {
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.main-page-updated {
+    font-size: 0.8rem;
+}
+
+.main-page-description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.main-app-title {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.main-app-content {
+    margin: 0.6rem 0;
+}
+
+.main-app-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-main);
+}
+
+@media (min-width: 540px) {
+    main {
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 900px;
+        margin-left: 290px;
+    }
+
+    .main-page-title {
+        padding-top: 3rem;
+    }
+
+    .main-app-title {
+        padding-top: 2rem;
+    }
+}

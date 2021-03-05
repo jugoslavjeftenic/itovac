@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Misliš da si kompjuterski ekspert? Testiraj svoje informatičko znanje i saznaj da li si laik ili pravi znalac.">
+        <meta name="keywords" content="kviz,it kviz,informatički kviz,kompjuterski kviz,kompjuteraški kviz,test,it test,informatički test,kompjuterski test,kompjuteraški test,
+            test znanja,test informatičkog znanja,test kompjuterskog znanja,test računarskog znanja,thio joe,kompjuterski ekspert,it ekspert">
+        <meta name="google-site-verification" content="TigtMKri6oG0kV1aQmFeDEXigXF2xHKPPvgfY2z-K40" />
+        <meta name="google" content="notranslate" />
+
+        <title>Thio Joeov IT test | itovac.iz.rs</title>
+
+        <!-- <link rel="shortcut icon" href="favicon.png"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="../shared.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40849049-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-40849049-4');
+        </script>
+    </head>
+    <body>
+        <div class="backdrop"></div>
+        <nav aria-label="Main" class="nav-bar">
+            <div class="nav-bar__hamburger"><img src="../svg/menu.svg"></div>
+            <a id="brand" class="nav-bar__brand" href="../index.html">itovac.rs</a>
+            <ul class="nav-bar__main-items">
+                <!-- Main navigation -->
+                <li><a href="../index.html">Tekstovi</a></li>
+                <li><a href="../humor/index.html">Humor</a></li>
+                <li><a href="index.html">Kvizovi</a></li>
+            </ul>
+            <ul class="nav-bar__page-items">
+                <!-- Page navigation -->
+                <li><a href="index.html">Reset</a></li>
+                <li><a href="#">Početak</a></li>
+                <li><a href="#level1">Nivo 1</a></li>
+                <li><a href="#level2">Nivo 2</a></li>
+                <li><a href="#level3">Nivo 3</a></li>
+                <li><a href="#level4">Nivo 4</a></li>
+                <li><a href="#score">Rezultat</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1 class="main-page-title"><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/nv2dNBizCRc">Thio Joeov</a> IT test.</h1>
+                <div class="main-page-updated">(ažurirano 06.04.2020.)</div>
+                <div class="main-page-description">
+                    Misliš da si kompjuterski ekspert? Testiraj svoje informatičko znanje i saznaj da li si laik ili pravi znalac.
+                </div>
+            </header>
+            <article class="quiz">
+                <!-- Level 1 -->
+                <div class="quiz-level" id="level1">Nivo 1</div>
+                <div class="quiz-no">#1</div>
+                <div class="quiz-question">Da li znaš koji operativni sistem koristiš?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q01a1" name="q01" onclick="fnScore(1,1);">
+                            <label for="q01a1">Windows</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q01a2" name="q01" onclick="fnScore(1,-2);">
+                            <label for="q01a2">macOS</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q01a3" name="q01" onclick="fnScore(1,5);">
+                            <label for="q01a3">Linux</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q01a4" name="q01" onclick="fnScore(1,-999);">
+                            <label for="q01a4">Ne znam</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#2</div>
+                <div class="quiz-question">Da li znaš koju verziju operativnog sistema koristiš?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q02a1" name="q02" onclick="fnScore(2,1);">
+                            <label for="q02a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q02a2" name="q02" onclick="fnScore(2,0);">
+                            <label for="q02a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#3</div>
+                <div class="quiz-question">Da li znaš šta je procesor?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q03a1" name="q03" onclick="fnScore(3,1);">
+                            <label for="q03a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q03a2" name="q03" onclick="fnScore(3,0);">
+                            <label for="q03a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#4</div>
+                <div class="quiz-question">Da li si ti neko ko traži pomoć oko računara od drugih?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q04a1" name="q04" onclick="fnScore(4,-1);">
+                            <label for="q04a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q04a2" name="q04" onclick="fnScore(4,0);">
+                            <label for="q04a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#5</div>
+                <div class="quiz-question">Da li si ti neko ko pruža pomoć oko računara drugima?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q05a1" name="q05" onclick="fnScore(5,1);">
+                            <label for="q05a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q05a2" name="q05" onclick="fnScore(5,0);">
+                            <label for="q05a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#6</div>
+                <div class="quiz-question">Da li tražiš tastere po tastaturi i kucaš sa dva prsta?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q06a1" name="q06" onclick="fnScore(6,-5);">
+                            <label for="q06a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q06a2" name="q06" onclick="fnScore(6,0);">
+                            <label for="q06a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#7</div>
+                <div class="quiz-question">Da li znaš kapacitet tvog diska?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q07a1" name="q07" onclick="fnScore(7,1);">
+                            <label for="q07a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q07a2" name="q07" onclick="fnScore(7,0);">
+                            <label for="q07a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#8</div>
+                <div class="quiz-question">Da li znaš trenutnu rezoluciju na tvom monitoru?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q08a1" name="q08" onclick="fnScore(8,1);">
+                            <label for="q08a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q08a2" name="q08" onclick="fnScore(8,0);">
+                            <label for="q08a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#9</div>
+                <div class="quiz-question">Da li znaš koliko jezgara ima tvoj procesor?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q09a1" name="q09" onclick="fnScore(9,0);">
+                            <label class="quiz-answer-special" for="q09a1">1x</label>
+                            <input type="radio" id="q09a2" name="q09" onclick="fnScore(9,1);">
+                            <label class="quiz-answer-special" for="q09a2">2x</label>
+                            <input type="radio" id="q09a3" name="q09" onclick="fnScore(9,4);">
+                            <label class="quiz-answer-special" for="q09a3">4x</label>
+                            <input type="radio" id="q09a4" name="q09" onclick="fnScore(9,6);">
+                            <label class="quiz-answer-special" for="q09a4">6x</label>
+                            <input type="radio" id="q09a5" name="q09" onclick="fnScore(9,8);">
+                            <label class="quiz-answer-special" for="q09a5">8x</label>
+                        </li>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q09a6" name="q09" onclick="fnScore(9,10);">
+                            <label class="quiz-answer-special" for="q09a6">10x</label>
+                            <input type="radio" id="q09a7" name="q09" onclick="fnScore(9,12);">
+                            <label class="quiz-answer-special" for="q09a7">12x</label>
+                            <input type="radio" id="q09a8" name="q09" onclick="fnScore(9,16);">
+                            <label class="quiz-answer-special" for="q09a8">16x</label>
+                            <input type="radio" id="q09a9" name="q09" onclick="fnScore(9,24);">
+                            <label class="quiz-answer-special" for="q09a9">24+</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q09a11" name="q09" onclick="fnScore(9,-1);">
+                            <label for="q09a11">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#10</div>
+                <div class="quiz-question">Da li koristiš samo web browser koji je došao zajedno sa operativnim sistemom?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q10a1" name="q10" onclick="fnScore(10,-1);">
+                            <label for="q10a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q10a2" name="q10" onclick="fnScore(10,0);">
+                            <label for="q10a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#11</div>
+                <div class="quiz-question">Da li si ikada sam otvorio kućište računara?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q11a1" name="q11" onclick="fnScore(11,2);">
+                            <label for="q11a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q11a2" name="q11" onclick="fnScore(11,0);">
+                            <label for="q11a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#12</div>
+                <div class="quiz-question">Da li si ikada koristio Linux (makar na minut)?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q12a1" name="q12" onclick="fnScore(12,2);">
+                            <label for="q12a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q12a2" name="q12" onclick="fnScore(12,0);">
+                            <label for="q12a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#13</div>
+                <div class="quiz-question">Da li praviš rezervne kopije tvojih podataka?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q13a1" name="q13" onclick="fnScore(13,1);">
+                            <label for="q13a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q13a2" name="q13" onclick="fnScore(13,-3);">
+                            <label for="q13a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#14</div>
+                <div class="quiz-question">Da li znaš da li je u tvom kompjuteru Intelov ili AMD-ov procesor?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q14a1" name="q14" onclick="fnScore(14,1);">
+                            <label for="q14a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q14a2" name="q14" onclick="fnScore(14,0);">
+                            <label for="q14a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#15</div>
+                <div class="quiz-question">Da li si ikada promenio home page u tvom web browser-u?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q15a1" name="q15" onclick="fnScore(15,0);">
+                            <label for="q15a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q15a2" name="q15" onclick="fnScore(15,-1);">
+                            <label for="q15a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Level 2 -->
+                <div class="quiz-level" id="level2">Nivo 2</div>
+                <div class="quiz-no">#16</div>
+                <div class="quiz-question">Da li si ikada promenio lozinku na kućnom WiFi-ju?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q16a1" name="q16" onclick="fnScore(16,2);">
+                            <label for="q16a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q16a2" name="q16" onclick="fnScore(16,0);">
+                            <label for="q16a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#17</div>
+                <div class="quiz-question">Da li znaš šta predstavlja skraćenica USB?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q17a1" name="q17" onclick="fnScore(17,2);">
+                            <label for="q17a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q17a2" name="q17" onclick="fnScore(17,0);">
+                            <label for="q17a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#18</div>
+                <div class="quiz-question">Da li znaš razliku između megabita i megabajta?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q18a1" name="q18" onclick="fnScore(18,1);">
+                            <label for="q18a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q18a2" name="q18" onclick="fnScore(18,0);">
+                            <label for="q18a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#19</div>
+                <div class="quiz-question">Koliko sati sediš za računarom van radnog vremena/škole?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q19a0" name="q19" onclick="fnScore(19,0);">
+                            <label class="quiz-answer-special" for="q19a0">+0</label>
+                            <input type="radio" id="q19a1" name="q19" onclick="fnScore(19,1);">
+                            <label class="quiz-answer-special" for="q19a1">+1</label>
+                            <input type="radio" id="q19a2" name="q19" onclick="fnScore(19,2);">
+                            <label class="quiz-answer-special" for="q19a2">+2</label>
+                            <input type="radio" id="q19a3" name="q19" onclick="fnScore(19,3);">
+                            <label class="quiz-answer-special" for="q19a3">+3</label>
+                            <input type="radio" id="q19a4" name="q19" onclick="fnScore(19,4);">
+                            <label class="quiz-answer-special" for="q19a4">+4</label>
+                        </li>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q19a5" name="q19" onclick="fnScore(19,5);">
+                            <label class="quiz-answer-special" for="q19a5">+5</label>
+                            <input type="radio" id="q19a6" name="q19" onclick="fnScore(19,6);">
+                            <label class="quiz-answer-special" for="q19a6">+6</label>
+                            <input type="radio" id="q19a7" name="q19" onclick="fnScore(19,7);">
+                            <label class="quiz-answer-special" for="q19a7">+7</label>
+                            <input type="radio" id="q19a8" name="q19" onclick="fnScore(19,8);">
+                            <label class="quiz-answer-special" for="q19a8">+8</label>
+                            <input type="radio" id="q19a9" name="q19" onclick="fnScore(19,9);">
+                            <label class="quiz-answer-special" for="q19a9">+9</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#20</div>
+                <div class="quiz-question">Da li si ikada koristio komandni prompt?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q20a1" name="q20" onclick="fnScore(20,2);">
+                            <label for="q20a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q20a2" name="q20" onclick="fnScore(20,0);">
+                            <label for="q20a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#21</div>
+                <div class="quiz-question">Da li znaš razliku između Java programskog jezika i Java skripte?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q21a1" name="q21" onclick="fnScore(21,1);">
+                            <label for="q21a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q21a2" name="q21" onclick="fnScore(21,0);">
+                            <label for="q21a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#22</div>
+                <div class="quiz-question">Da li tvoje lozinke sadrže specijalne karaktere?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q22a1" name="q22" onclick="fnScore(22,1);">
+                            <label for="q22a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q22a2" name="q22" onclick="fnScore(22,0);">
+                            <label for="q22a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#23</div>
+                <div class="quiz-question">Da li si ikada sam zamenio komponentu računara unutar kućišta?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q23a1" name="q23" onclick="fnScore(23,3);">
+                            <label for="q23a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q23a2" name="q23" onclick="fnScore(23,0);">
+                            <label for="q23a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#24</div>
+                <div class="quiz-question">Ako imaš više od jednog monitora upiši koliko imaš dodatnih monitora.</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q24a0" name="q24" onclick="fnScore(24,0);">
+                            <label class="quiz-answer-special" for="q24a0">+0</label>
+                            <input type="radio" id="q24a1" name="q24" onclick="fnScore(24,1);">
+                            <label class="quiz-answer-special" for="q24a1">+1</label>
+                            <input type="radio" id="q24a2" name="q24" onclick="fnScore(24,2);">
+                            <label class="quiz-answer-special" for="q24a2">+2</label>
+                            <input type="radio" id="q24a3" name="q24" onclick="fnScore(24,3);">
+                            <label class="quiz-answer-special" for="q24a3">+3</label>
+                            <input type="radio" id="q24a4" name="q24" onclick="fnScore(24,4);">
+                            <label class="quiz-answer-special" for="q24a4">+4</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#25</div>
+                <div class="quiz-question">Da li znaš razliku između HTTP-a i HTTPS-a?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q25a1" name="q25" onclick="fnScore(25,1);">
+                            <label for="q25a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q25a2" name="q25" onclick="fnScore(25,0);">
+                            <label for="q25a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#26</div>
+                <div class="quiz-question">Da li si ikada sam sastavio kompletan računar?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q26a1" name="q26" onclick="fnScore(26,4);">
+                            <label for="q26a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q26a2" name="q26" onclick="fnScore(26,0);">
+                            <label for="q26a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#27</div>
+                <div class="quiz-question">Da li si ikada ručno overklokovao procesor?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q27a1" name="q27" onclick="fnScore(27,5);">
+                            <label for="q27a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q27a2" name="q27" onclick="fnScore(27,0);">
+                            <label for="q27a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#28</div>
+                <div class="quiz-question">Da li znaš šta je RAM timings i na koji način funkcioniše?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q28a1" name="q28" onclick="fnScore(28,3);">
+                            <label for="q28a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q28a2" name="q28" onclick="fnScore(28,0);">
+                            <label for="q28a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Level 3 -->
+                <div class="quiz-level" id="level3">Nivo 3</div>
+                <div class="quiz-no">#29</div>
+                <div class="quiz-question">Da li znaš čemu služi "Insert" taster?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q29a1" name="q29" onclick="fnScore(29,1);">
+                            <label for="q29a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q29a2" name="q29" onclick="fnScore(29,0);">
+                            <label for="q29a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#30</div>
+                <div class="quiz-question">Da li znaš čemu služi "Scroll lock" taster?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q30a1" name="q30" onclick="fnScore(30,3);">
+                            <label for="q30a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q30a2" name="q30" onclick="fnScore(30,0);">
+                            <label for="q30a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#31</div>
+                <div class="quiz-question">Da li ti je računar bio zaražen virusom u zadnjih 6 meseci?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q31a1" name="q31" onclick="fnScore(31,0);">
+                            <label for="q31a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q31a2" name="q31" onclick="fnScore(31,3);">
+                            <label for="q31a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#32</div>
+                <div class="quiz-question">Da li si ti neko kome nije potreban antivirusni program?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q32a1" name="q32" onclick="fnScore(32,-10);">
+                            <label for="q32a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q32a2" name="q32" onclick="fnScore(32,1);">
+                            <label for="q32a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#33</div>
+                <div class="quiz-question">Da li si enkriptovao hard disk?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q33a1" name="q33" onclick="fnScore(33,4);">
+                            <label for="q33a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q33a2" name="q33" onclick="fnScore(33,0);">
+                            <label for="q33a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#34</div>
+                <div class="quiz-question">Da li imaš kućni server koji sam održavaš?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q34a1" name="q34" onclick="fnScore(34,5);">
+                            <label for="q34a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q34a2" name="q34" onclick="fnScore(34,0);">
+                            <label for="q34a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#35</div>
+                <div class="quiz-question">Da li znaš šta je mrežni svič?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q35a1" name="q35" onclick="fnScore(35,0);">
+                            <label for="q35a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q35a2" name="q35" onclick="fnScore(35,-1);">
+                            <label for="q35a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#36</div>
+                <div class="quiz-question">Koliko svičeva imaš kod kuće.</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q36a1" name="q36" onclick="fnScore(36,1);">
+                            <label class="quiz-answer-special" for="q36a1">-1-</label>
+                            <input type="radio" id="q36a2" name="q36" onclick="fnScore(36,2);">
+                            <label class="quiz-answer-special" for="q36a2">-2-</label>
+                            <input type="radio" id="q36a3" name="q36" onclick="fnScore(36,3);">
+                            <label class="quiz-answer-special" for="q36a3">-3-</label>
+                            <input type="radio" id="q36a4" name="q36" onclick="fnScore(36,4);">
+                            <label class="quiz-answer-special" for="q36a4">-4-</label>
+                            <input type="radio" id="q36a5" name="q36" onclick="fnScore(36,5);">
+                            <label class="quiz-answer-special" for="q36a5">-5-</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#37</div>
+                <div class="quiz-question">Da li si ikada ručno prepravljao Windows registry bazu?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q37a1" name="q37" onclick="fnScore(37,5);">
+                            <label for="q37a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q37a2" name="q37" onclick="fnScore(37,0);">
+                            <label for="q37a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#38</div>
+                <div class="quiz-question">Da li znaš da napišeš "Hello World" u bilo kojem programskom jeziku/skripti?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q38a1" name="q38" onclick="fnScore(38,5);">
+                            <label for="q38a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q38a2" name="q38" onclick="fnScore(38,0);">
+                            <label for="q38a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#39</div>
+                <div class="quiz-question">Da li si ikada kupio deo za računar koji je koštao više od trećine tvog mesečnog prihoda?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q39a1" name="q39" onclick="fnScore(39,5);">
+                            <label for="q39a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q39a2" name="q39" onclick="fnScore(39,0);">
+                            <label for="q39a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#40</div>
+                <div class="quiz-question">Novac za kupovinu računara si zaradio sam ili dobio od roditelja/žene?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q40a1" name="q40" onclick="fnScore(40,0);">
+                            <label for="q40a1">Sam</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q40a2" name="q40" onclick="fnScore(40,-10);">
+                            <label for="q40a2">Dobio</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#41</div>
+                <div class="quiz-question">Da li znaš šta je Google Ultron?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q41a1" name="q41" onclick="fnScore(41,3);">
+                            <label for="q41a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q41a2" name="q41" onclick="fnScore(41,0);">
+                            <label for="q41a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#42</div>
+                <div class="quiz-question">Pored ugrađenog koliko imaš dodatnih web browser-a?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li class="quiz-answer-special-li">
+                            <input type="radio" id="q42a0" name="q42" onclick="fnScore(42,0);">
+                            <label class="quiz-answer-special" for="q42a0">+0</label>
+                            <input type="radio" id="q42a1" name="q42" onclick="fnScore(42,1);">
+                            <label class="quiz-answer-special" for="q42a1">+1</label>
+                            <input type="radio" id="q42a2" name="q42" onclick="fnScore(42,2);">
+                            <label class="quiz-answer-special" for="q42a2">+2</label>
+                            <input type="radio" id="q42a3" name="q42" onclick="fnScore(42,3);">
+                            <label class="quiz-answer-special" for="q42a3">+3</label>
+                            <input type="radio" id="q42a4" name="q42" onclick="fnScore(42,4);">
+                            <label class="quiz-answer-special" for="q42a4">+4</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Level 4 -->
+                <div class="quiz-level" id="level4">Nivo 4</div>
+                <div class="quiz-no">#43</div>
+                <div class="quiz-question">Da li si ikada sam napravio ethernet kabl?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q43a1" name="q43" onclick="fnScore(43,8);">
+                            <label for="q43a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q43a2" name="q43" onclick="fnScore(43,0);">
+                            <label for="q43a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#44</div>
+                <div class="quiz-question">Da li si ikada sam nadogradio firmware na kućnom ruteru?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q44a1" name="q44" onclick="fnScore(44,10);">
+                            <label for="q44a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q44a2" name="q44" onclick="fnScore(44,0);">
+                            <label for="q44a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#45</div>
+                <div class="quiz-question">Da li si ikada promenio veličinu particije na disku?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q45a1" name="q45" onclick="fnScore(45,10);">
+                            <label for="q45a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q45a2" name="q45" onclick="fnScore(45,0);">
+                            <label for="q45a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#46</div>
+                <div class="quiz-question">Da li si ikada upotrebio SSH da pristupiš udaljenom računaru?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q46a1" name="q46" onclick="fnScore(46,10);">
+                            <label for="q46a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q46a2" name="q46" onclick="fnScore(46,0);">
+                            <label for="q46a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#47</div>
+                <div class="quiz-question">Da li si ikada podešavao DNS server na svom računaru ili ruteru?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q47a1" name="q47" onclick="fnScore(47,10);">
+                            <label for="q47a1">Da</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q47a2" name="q47" onclick="fnScore(47,0);">
+                            <label for="q47a2">Ne</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-no">#48</div>
+                <div class="quiz-question">Da li misliš da je ovo ozbiljan test ili zezanje?</div>
+                <div class="quiz-score"></div>
+                <div class="quiz-answer">
+                    <ul>
+                        <li>
+                            <input type="radio" id="q48a1" name="q48" onclick="fnScore(48,-5);">
+                            <label for="q48a1">Zbilja</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q48a2" name="q48" onclick="fnScore(48,10);">
+                            <label for="q48a2">Zezanje</label>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <section id="score">
+                <span>Ukupno poena: </span>
+                <span class="score-total">0</span>
+                <div class="score-description"></div>
+            </section>
+        </main>
+        <footer>
+            <nav aria-label="Footer" class="nav-footer">
+                <ul>
+                    <li><a href="#">nazad na vrh</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="../shared.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
